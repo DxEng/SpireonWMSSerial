@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>  
+    
+<head>  
+    <title>Inline JavaScript</title>  
+    <meta charset="utf-8">  
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" 
+          href=  
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+</head>  
+    
+<body>  
+    <div class="container">  
+        <h1 style="text-align:center;color:green;">  
+          Device Validation
+      </h1>  
+        <form>  
+            <div class="form-group">  
+                <label for="">Enter Device Serial:</label>  
+                <input id="name"
+                       class="form-control" 
+                       type="text" 
+                       placeholder="Enter Device Serial">  
+            </div>  
+            <div class="form-group">  
+                <button id="btn-alert"
+                        class="btn btn-success btn-lg float-right" 
+                        type="submit">  
+                     Validate Device Serial   
+                </button>  
+            </div>  
+        </form>  
+    </div>  
+    <script> 
+        var user_name = document.getElementById("name"); 
+        document.getElementById("btn-alert").addEventListener("click", function(){ 
+            var value=user_name.value.trim(); 
+            if(!value) 
+                alert("Device Serial Cannot be empty!"); 
+            else 
+                alert("Device Serial is \n" + value ); 
+        }); 
+    </script> 
+</body>  
+   
+</html>  
