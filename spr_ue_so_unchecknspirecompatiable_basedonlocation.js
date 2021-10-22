@@ -6,7 +6,7 @@
 define([ 'N/record', 'N/log'],
 function( record, log){
 
-   
+   //comment commit
     /**
      * Function definition to be triggered before record is saved.
      *
